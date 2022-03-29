@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">fitness-application</string>
+    <string name="register">Ei käyttäjää? <b>Rekisteröidy tästä!</b></string>
+    <string name="loginNumber"><b>TAI</b> kirjaudu sisään puhelinnumerollasi:</string>
+    <string name="backToSignup"><b>Takaisin kirjautumiseen</b></string>
+    <string name="info"><b>Täytä alla olevat tiedot, jotta osaamme suositella sinulle sopivia treenejä</b></string>
+</resources>
