@@ -64,47 +64,16 @@
         android:layout_marginTop="10dp"
         android:text="Kirjaudu" />
 
-    <TextView
-        android:id="@+id/numberTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/loginButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:text="@string/loginNumber" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/phone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/numberTitle"
-        android:layout_marginTop="20dp"
-        android:hint="Puhelinnumero">
-
-        <EditText
-            android:id="@+id/numberEdit"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="number"/>
-
-        <Button
-            android:id="@+id/numberButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/phone"
-            android:layout_marginTop="10dp"
-            android:text="Kirjaudu" />
-
-
-    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
+        android:id="@+id/noAccount"
+        style="@style/TextAppearance.MaterialComponents.Caption"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        style="@style/TextAppearance.MaterialComponents.Caption"
-        android:text="@string/register"/>
+        android:text="@string/register" />
 
 
 </RelativeLayout>
