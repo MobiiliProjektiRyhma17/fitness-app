@@ -20,5 +20,9 @@ class HomeActivity : AppCompatActivity() {
             val intent = Intent(this, BMIActivity::class.java)
             startActivity(intent)
         }
+        binding.profileButton.setOnClickListener{
+            val intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

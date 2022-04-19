@@ -42,6 +42,11 @@ class ProfileActivity : AppCompatActivity() {
             firebaseAuth.signOut()
             checkUser()
         }
+
+        binding.homeButton1.setOnClickListener{
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun checkUser() {

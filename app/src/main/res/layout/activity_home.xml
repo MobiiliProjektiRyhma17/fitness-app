@@ -27,6 +27,48 @@
         android:text="@string/homeText" />
 
     <LinearLayout
+        android:layout_width="393dp"
+        android:layout_height="118dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/homeButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="koti"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/profileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="profiili"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/calendarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="kalenteri"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/timerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="ajastin"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
@@ -95,5 +137,6 @@
 
 
     </LinearLayout>
+
 
 </LinearLayout>
