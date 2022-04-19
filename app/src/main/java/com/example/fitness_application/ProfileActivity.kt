@@ -6,6 +6,8 @@ import android.os.Bundle
 import androidx.appcompat.app.ActionBar
 import com.example.fitness_application.databinding.ActivityProfileBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 class ProfileActivity : AppCompatActivity() {
 
@@ -19,8 +21,9 @@ class ProfileActivity : AppCompatActivity() {
     //ActionBar
     private lateinit var actionBar: ActionBar
 
-    //FirebaseAuth
+    //Firebase
     private lateinit var firebaseAuth: FirebaseAuth
+    private lateinit var databaseReference: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,6 +32,8 @@ class ProfileActivity : AppCompatActivity() {
 
         actionBar = supportActionBar!!
         actionBar.title = "Profiili"
+
+        databaseReference = FirebaseDatabase.getInstance().getReference("Profiles")
 
         firebaseAuth = FirebaseAuth.getInstance()
         checkUser()
