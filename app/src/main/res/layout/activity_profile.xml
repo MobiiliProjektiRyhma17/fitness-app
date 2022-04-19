@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dp"
+    android:padding="10dp"
     tools:context=".ProfileActivity">
 
 
@@ -25,21 +25,21 @@
         android:layout_centerHorizontal="true"
         android:text="Email" />
 
-    <Button
+    <TextView
         android:id="@+id/logoutButton"
+        style="@style/TextAppearance.MaterialComponents.Body2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/welcomeMessage"
-        android:text="Kirjaudu ulos"
-        android:textSize="8dp"/>
+        android:text="@string/logout"
+        android:textSize="13dp" />
 
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/name"
         android:layout_width="match_parent"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="40dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/logoutButton">
+        android:layout_below="@id/showEmail">
 
         <EditText
             android:id="@+id/nameEdit"
@@ -52,7 +52,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/address"
         android:layout_width="match_parent"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/name">
         <EditText
@@ -66,7 +66,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/phoneNumber"
         android:layout_width="match_parent"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/address">
         <EditText
@@ -83,60 +83,66 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/phoneNumber"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:text="@string/info"
-        android:textSize="10sp" />
+        android:textSize="11sp" />
 
 
-    <TextView
-        android:id="@+id/height"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/registerInfo"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="true"
-        android:text="Pituus (cm)" />
-
-    <SeekBar
-        android:id="@+id/heightSlider"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/height"
-        android:layout_marginTop="5dp"
-        android:max="210"
-        android:progress="0" />
-
-    <TextView
-        android:id="@+id/weight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/heightSlider"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="true"
-        android:text="Paino (kg)" />
-    <SeekBar
-        android:id="@+id/weightSlider"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/weight"
-        android:layout_marginTop="5dp"
-        android:max="210"
-        android:progress="0"/>
 
     <TextView
         android:id="@+id/goal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/weightSlider"
-        android:layout_marginTop="10dp"
+        android:layout_below="@id/registerInfo"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
         android:text="Tavoitteesi:" />
 
-    <Button
-        android:id="@+id/goalPopup"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/goalSelect"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/darker_gray"
-        android:layout_below="@id/goal" />
+        android:layout_below="@id/goal"
+        android:hint="Valitse tavoite">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/shapeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goalSelect"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Kuntotasosi:" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shapeText"
+        android:hint="Valitse kuntotasosi">
+
+        <AutoCompleteTextView
+            android:id="@+id/shapeSelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/editButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/shapeSelect"
+            android:text="Päivitä tiedot"
+            android:textSize="15dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
 
 </RelativeLayout>
