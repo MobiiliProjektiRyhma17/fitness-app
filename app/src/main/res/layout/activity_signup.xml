@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:padding="20dp"
     android:gravity="center"
-    tools:context=".SignupActivity">
+    tools:context=".SignupActivity"
+    android:background="@drawable/loginreg">
 
     <TextView
         android:layout_width="wrap_content"

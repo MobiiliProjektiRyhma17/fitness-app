@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/home">
+    
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img"/>
+
+    <TextView
+        android:id="@+id/showEmail"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:paddingTop="3dp"
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/homeText" />
+
+    <LinearLayout
+        android:layout_width="393dp"
+        android:layout_height="118dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/homeButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="koti"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/profileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="profiili"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/calendarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="kalenteri"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/timerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="ajastin"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/bmiballcolor"
+                android:id="@+id/bmi">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BMI"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Laskuri"
+                android:textSize="22sp"
+                android:textColor="@color/purple_500"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- History -->
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/bmiballcolor"
+                android:src="@drawable/ic_workout"
+                android:id="@+id/history_ib"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Treeniohjelmat"
+                android:textSize="22sp"
+                android:textColor="@color/purple_500"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

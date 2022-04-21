@@ -7,4 +7,20 @@
     <string name="add">Lisää treeni</string>
     <string name="titlehint">Treenin nimi</string>
     <string name="treenin_kuvaus">Treenin sisältö/kuvaus:</string>
+    <string name="logout"><b>Kirjaudu ulos</b></string>
+    <string name="homeText"><b>Valmiina treenaamaan?</b></string>
+
+    <string-array name="goals">
+        <item>Laihtuminen</item>
+        <item>Kunnon ylläpito</item>
+        <item>Lihasmassan kasvatus</item>
+    </string-array>
+
+    <string-array name="shapes">
+        <item>Huono</item>
+        <item>Tyydyttävä</item>
+        <item>Hyvä</item>
+        <item>Erinomainen</item>
+    </string-array>
+
 </resources>
