@@ -4,4 +4,7 @@
     <string name="loginNumber"><b>TAI</b> kirjaudu sisään puhelinnumerollasi:</string>
     <string name="backToSignup"><b>Takaisin kirjautumiseen</b></string>
     <string name="info"><b>Täytä alla olevat tiedot, jotta osaamme suositella sinulle sopivia treenejä</b></string>
+    <string name="add">Lisää treeni</string>
+    <string name="titlehint">Treenin nimi</string>
+    <string name="treenin_kuvaus">Treenin sisältö/kuvaus:</string>
 </resources>

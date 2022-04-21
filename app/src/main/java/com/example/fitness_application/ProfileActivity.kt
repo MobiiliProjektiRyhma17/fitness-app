@@ -37,6 +37,10 @@ class ProfileActivity : AppCompatActivity() {
             firebaseAuth.signOut()
             checkUser()
         }
+
+        binding.button3.setOnClickListener {
+            startActivity(Intent(this, WorkoutsActivity::class.java))
+        }
     }
 
     private fun checkUser() {
