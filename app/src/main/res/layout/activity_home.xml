@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity"
     android:gravity="center_horizontal"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/home">
     
     <ImageView
         android:id="@+id/image"
@@ -21,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/image"
-        android:paddingTop="30dp"
+        android:paddingTop="3dp"
         android:textSize="35sp"
         android:layout_centerHorizontal="true"
         android:text="@string/homeText" />
