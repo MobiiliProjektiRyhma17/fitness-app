@@ -12,6 +12,8 @@ import android.widget.BaseAdapter
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
+import com.example.fitness_application.databinding.ActivityAddWorkoutBinding
+import com.example.fitness_application.databinding.ActivityWorkoutsBinding
 import kotlinx.android.synthetic.main.activity_workouts.*
 import kotlinx.android.synthetic.main.workout_item.view.*
 
@@ -21,17 +23,18 @@ class WorkoutsActivity : AppCompatActivity() {
     var listNotes=ArrayList<Workouts>()
     var dbManager:WorkoutsDatabase?=null
 
-
     private lateinit var actionBar: ActionBar
+    private lateinit var binding: ActivityWorkoutsBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
 
         actionBar = supportActionBar!!
         actionBar.title = "Treenit"
 
+        binding = ActivityWorkoutsBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_workouts)
+        setContentView(binding.root)
         dbManager = DBManager().getDatabase(applicationContext)
 
         LoadQuery("%")
@@ -150,6 +153,15 @@ class WorkoutsActivity : AppCompatActivity() {
        intent.putExtra("des",workout.Description)
        startActivity(intent)
    }
+
+    fun main(args: Array<String>) {
+
+        val chars = listOf('å', 'ä', 'ö')
+        val (letters, notLetters) = chars.partition { it.isLetter() }
+        println(letters) // [a, β]
+        println(notLetters) // [+, 1]
+
+    }
 
 
 }
