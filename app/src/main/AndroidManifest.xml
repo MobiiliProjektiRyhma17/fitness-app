@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fitnessapplication">
         <activity
+            android:name=".PlansActivity"
+            android:exported="false" />
+        <activity
             android:name=".TrainingActivity"
             android:exported="false" />
         <activity
@@ -32,7 +35,6 @@
         <activity
             android:name=".WorkoutsActivity"
             android:exported="false" />
-
         <activity
             android:name=".LoginActivity"
             android:exported="true">
