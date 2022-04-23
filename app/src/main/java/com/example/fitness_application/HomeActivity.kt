@@ -25,7 +25,7 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding.calendarButton.setOnClickListener{
+        binding.calendarIb.setOnClickListener{
             val intent = Intent(this, WorkoutsActivity::class.java)
             startActivity(intent)
         }
