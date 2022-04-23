@@ -28,52 +28,114 @@
         android:text="@string/homeText" />
 
     <LinearLayout
-        android:layout_width="393dp"
-        android:layout_height="118dp"
+        android:layout_width="match_parent"
+        android:paddingTop="65dp"
+        android:layout_height="170dp"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/homeButton1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="5dp"
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_weight="1"
-            android:text="koti"
-            android:textSize="10sp" />
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
 
-        <Button
-            android:id="@+id/profileButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="5dp"
-            android:layout_weight="1"
-            android:text="profiili"
-            android:textSize="10sp" />
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/bmiballcolor"
+                android:src="@drawable/ic_baseline_home_24"
+                android:id="@+id/home_ib"/>
 
-        <Button
-            android:id="@+id/calendarButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="5dp"
-            android:layout_weight="1"
-            android:text="kalenteri"
-            android:textSize="10sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Koti"
+                android:textSize="22sp"
+                android:textColor="@color/purple_500"
+                android:textStyle="bold"/>
+        </LinearLayout>
 
-        <Button
-            android:id="@+id/timerButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_weight="1"
-            android:text="ajastin"
-            android:textSize="10sp" />
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/bmiballcolor"
+                android:src="@drawable/ic_baseline_account_circle_24"
+                android:id="@+id/profile_ib"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Profiili"
+                android:textSize="22sp"
+                android:textColor="@color/purple_500"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/bmiballcolor"
+                android:src="@drawable/ic_baseline_calendar_today_24"
+                android:id="@+id/calendar_ib"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Kalenteri"
+                android:textSize="22sp"
+                android:textColor="@color/purple_500"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/bmiballcolor"
+                android:src="@drawable/ic_baseline_timer_24"
+                android:id="@+id/timer_ib"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Ajastin"
+                android:textSize="22sp"
+                android:textColor="@color/purple_500"
+                android:textStyle="bold"/>
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:gravity="center">
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
 
 
         <LinearLayout
@@ -118,7 +180,6 @@
             android:orientation="vertical"
             android:gravity="center">
 
-            <!-- History -->
             <ImageButton
                 android:layout_width="70dp"
                 android:layout_height="70dp"

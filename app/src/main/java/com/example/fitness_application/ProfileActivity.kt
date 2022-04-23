@@ -61,8 +61,12 @@ class ProfileActivity : AppCompatActivity() {
             checkUser()
         }
 
-        binding.homeButton1.setOnClickListener{
+        binding.homeIb.setOnClickListener{
             val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+        }
+        binding.calendarIb.setOnClickListener {
+            val intent = Intent(this, WorkoutsActivity::class.java)
             startActivity(intent)
         }
 

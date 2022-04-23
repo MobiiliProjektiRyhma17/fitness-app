@@ -66,7 +66,6 @@
         android:text="Kirjaudu" />
 
 
-
     <TextView
         android:id="@+id/noAccount"
         style="@style/TextAppearance.MaterialComponents.Caption"

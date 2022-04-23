@@ -20,10 +20,11 @@ class HomeActivity : AppCompatActivity() {
             val intent = Intent(this, BMIActivity::class.java)
             startActivity(intent)
         }
-        binding.profileButton.setOnClickListener{
+        binding.profileIb.setOnClickListener{
             val intent = Intent(this, ProfileActivity::class.java)
             startActivity(intent)
         }
+
         binding.calendarButton.setOnClickListener{
             val intent = Intent(this, WorkoutsActivity::class.java)
             startActivity(intent)
@@ -32,5 +33,6 @@ class HomeActivity : AppCompatActivity() {
             val intent = Intent(this, PlansActivity::class.java)
             startActivity(intent)
         }
+
     }
 }
