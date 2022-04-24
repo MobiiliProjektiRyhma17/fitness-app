@@ -75,6 +75,12 @@ class ProfileActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.timerIb.setOnClickListener{
+            val intent = Intent(this, WorkoutsActivity::class.java)
+            startActivity(intent)
+        }
+
+
         val goals = resources.getStringArray(R.array.goals)
         val arrayAdapter = ArrayAdapter(this,R.layout.dropdown_item,goals)
         val shapes = resources.getStringArray(R.array.shapes)
