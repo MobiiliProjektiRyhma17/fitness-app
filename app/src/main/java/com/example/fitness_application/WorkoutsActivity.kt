@@ -30,7 +30,7 @@ class WorkoutsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         actionBar = supportActionBar!!
-        actionBar.title = "Treenit"
+        actionBar.title = "Päiväkirja"
 
         binding = ActivityWorkoutsBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
