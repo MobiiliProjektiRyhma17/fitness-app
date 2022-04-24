@@ -79,48 +79,47 @@
             android:textSize="18sp" />
 
 
-
         <TextView
             android:id="@+id/your_bmi_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:paddingTop="5dp"
             android:text="Painoindeksisi on:"
             android:textColor="#000000"
-            android:paddingTop="5dp"
             android:textSize="16sp" />
 
         <TextView
             android:id="@+id/result"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=" "
+            android:layout_below="@id/calculatebtn"
             android:gravity="center"
-            android:textSize="16sp"
-            android:textColor="#000000"
             android:paddingTop="5dp"
-            android:layout_below="@id/calculatebtn"/>
+            android:text=" "
+            android:textColor="#000000"
+            android:textSize="16sp" />
 
 
         <TextView
+            android:id="@+id/bmiType"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:gravity="center"
-            android:textSize="18sp"
             android:textColor="#000000"
-            tools:text=" "
-            android:id="@+id/bmiType"/>
+            android:textSize="18sp"
+            tools:text=" " />
 
         <TextView
+            android:id="@+id/bmiDesc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:gravity="center"
-            android:textSize="18sp"
             android:textColor="#000000"
-            tools:text=" "
-            android:id="@+id/bmiDesc"/>
+            android:textSize="18sp"
+            tools:text=" " />
 
 
     </LinearLayout>

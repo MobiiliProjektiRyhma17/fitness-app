@@ -2,6 +2,7 @@ package com.example.fitness_application
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.ActionBar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.database.*
@@ -11,10 +12,14 @@ class PlansActivity : AppCompatActivity() {
     private lateinit var dbRef: DatabaseReference
     private lateinit var planRecyclerView: RecyclerView
     private  lateinit var planArrayList: ArrayList<plan>
+    private lateinit var actionBar: ActionBar
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_plans)
+
+        actionBar = supportActionBar!!
+        actionBar.title = "Treeniohjelmat"
 
 
         planRecyclerView = findViewById(R.id.planList)
