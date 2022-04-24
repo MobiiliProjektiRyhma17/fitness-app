@@ -76,7 +76,7 @@ class ProfileActivity : AppCompatActivity() {
         }
 
         binding.timerIb.setOnClickListener{
-            val intent = Intent(this, WorkoutsActivity::class.java)
+            val intent = Intent(this, TimerActivity::class.java)
             startActivity(intent)
         }
 
